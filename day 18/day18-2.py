@@ -52,4 +52,5 @@ def compute(tree):
 total = 0
 for line in f:
 	total += compute(treeify(tokenize(line)))
+f.close()
 print(total)
